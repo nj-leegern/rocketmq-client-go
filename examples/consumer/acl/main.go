@@ -31,7 +31,7 @@ import (
 func main() {
 	c, err := rocketmq.NewPushConsumer(
 		consumer.WithGroupName("testGroup"),
-		consumer.WithNameServer([]string{"127.0.0.1:9876"}),
+		consumer.WithNameServer([]string{"192.168.1.225:9876"}),
 		consumer.WithCredentials(primitive.Credentials{
 			AccessKey: "RocketMQ",
 			SecretKey: "12345678",
